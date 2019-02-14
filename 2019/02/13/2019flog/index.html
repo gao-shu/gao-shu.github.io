@@ -116,9 +116,9 @@
 <ul>
     <li class="all active">全部文章</li>
     
-    <li data-rel="总结与目标"> 总结与目标 </li>
-    
     <li data-rel="myblog"> myblog </li>
+    
+    <li data-rel="总结与目标"> 总结与目标 </li>
     
 </ul>
 <div class="left-bottom">
@@ -164,11 +164,11 @@
     <div class="tags-list">
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color5">flog</a>
+        <a href="javascript:" class="color2">myblog</a>
     </li>
     
     <li class="article-tag-list-item">
-        <a href="javascript:" class="color2">myblog</a>
+        <a href="javascript:" class="color5">flog</a>
     </li>
     
     <div class="clearfix"></div>
@@ -181,12 +181,7 @@
     
     <nav id="title-list-nav">
         
-        <a class="总结与目标 " href="/2019/02/13/2019flog/" data-tag="flog" data-author="">
-            <span class="post-title" title="2019年目标">2019年目标</span>
-            <span class="post-date" title="2019-02-13 21:38:13">2019/02/13</span>
-        </a>
-        
-        <a class="总结与目标 " href="/2019/02/13/flog/" data-tag="flog" data-author="">
+        <a id="top" class="总结与目标 " href="/2019/02/13/flog/" data-tag="flog" data-author="">
             <span class="post-title" title="我的目标">我的目标</span>
             <span class="post-date" title="2019-02-13 21:11:21">2019/02/13</span>
         </a>
@@ -194,6 +189,11 @@
         <a class="myblog " href="/2019/02/13/blog快捷键/" data-tag="myblog" data-author="">
             <span class="post-title" title="blog快捷键">blog快捷键</span>
             <span class="post-date" title="2019-02-13 22:00:02">2019/02/13</span>
+        </a>
+        
+        <a class="总结与目标 " href="/2019/02/13/2019flog/" data-tag="flog" data-author="">
+            <span class="post-title" title="2019年目标">2019年目标</span>
+            <span class="post-date" title="2019-02-13 21:38:13">2019/02/13</span>
         </a>
         
     </nav>
@@ -382,7 +382,7 @@
     /*作者、标签的自动补全*/
     $(function () {
         $('.search').AutoComplete({
-            'data': ['#flog','#myblog',],
+            'data': ['#myblog','#flog',],
             'itemHeight': 20,
             'width': 418
         }).AutoComplete('show');
